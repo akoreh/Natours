@@ -46,21 +46,5 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%); }
-    .header__text-box .heading-primary {
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 400;
-      backface-visibility: hidden;
-      margin-bottom: 6rem; }
-      .header__text-box .heading-primary--main {
-        display: block;
-        font-size: 6rem;
-        letter-spacing: 3.5rem;
-        animation: moveInLeft 1s ease-out; }
-      .header__text-box .heading-primary--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-        animation: moveInRight 1s ease-out; }
+    transform: translate(-50%, -50%);
+    text-align: center; }

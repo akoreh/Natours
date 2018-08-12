@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Header.css';
 import Logo from '../../assets/img/logo-white.png';
-import Button from '../Button/Button';
+import Button from '../UI/Button/Button';
 
 const header = () => (
     <header className="header">
