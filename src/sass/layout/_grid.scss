@@ -1,6 +1,11 @@
+@import '../abstracts/_variables';
+
 .row {
-    max-width: 114rem;
+    max-width: $grid-width;
     margin: 0 auto;
-    background: red;
-    height: 30vh;
+
+    //Everything except the last child
+    &:not(:last-child) {
+        margin-bottom: $grid-gutter-vertical;
+    }
 }
