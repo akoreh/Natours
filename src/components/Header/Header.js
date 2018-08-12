@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Header.css';
 import Logo from '../../assets/img/logo-white.png';
+import Button from '../Button/Button';
 
 const header = () => (
     <header className="header">
@@ -13,7 +14,7 @@ const header = () => (
                 <span className="heading-primary--main">outdoors</span>
                 <span className="heading-primary--sub">is where life happens</span>
             </h1>
-            <a href="#" className="btn ">Discover Our Tours</a>
+            <Button color="white" animated>Discover our tours</Button>
         </div>
     </header>
 );

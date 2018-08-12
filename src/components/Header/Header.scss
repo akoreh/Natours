@@ -1,0 +1,56 @@
+@import '../../sass/abstracts/_variables';
+@import '../../sass/base/_animations';
+
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../../assets/img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    /* Logo Box  */
+
+    &__logo-box{
+        position: absolute;
+        left: 4rem;
+        top: 4rem;
+
+        img {
+            height: 3.5rem;
+            pointer-events: none;
+        }
+    }
+
+    /* Text Box */
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .heading-primary {
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 400;
+            backface-visibility: hidden;
+            margin-bottom: 6rem;
+
+            &--main {
+                display: block;
+                font-size: 6rem;
+                letter-spacing: 3.5rem;
+                animation: moveInLeft 1s ease-out;
+            }
+
+            &--sub {
+                display: block;
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: 1.75rem;
+                animation: moveInRight 1s ease-out;
+            }
+        }
+    }
+}
