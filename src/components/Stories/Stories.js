@@ -44,7 +44,7 @@ const stories = () =>{
             }
 
             <div className="u-center-text u-margin-top-huge">
-                <Button text>Learn more &rarr;</Button>
+                <Button text>More stories &rarr;</Button>
             </div>
         </section>
     );
