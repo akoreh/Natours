@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header';
 import About from '../../components/About/About';
 import Features from '../../components/Features/Features';
 import Tours from '../../components/Tours/Tours';
+import Stories from '../../components/Stories/Stories';
 
 const layout = () => (
     <Wrapper>
@@ -13,6 +14,7 @@ const layout = () => (
             <About />
             <Features />
             <Tours />
+            <Stories />
         </main>
     </Wrapper>
 );
