@@ -1,0 +1,6 @@
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__radio-group {
+  width: 50%;
+  display: inline-block; }

@@ -1,0 +1,16 @@
+@import '../../../sass/abstracts/_variables';
+
+.form {
+
+    &__group {
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__radio-group {
+        width: 50%;
+        display: inline-block;
+    }
+}
