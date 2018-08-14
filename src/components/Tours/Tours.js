@@ -57,7 +57,7 @@ const tours = () => {
                     }
             </div>
 
-            <div className="u-center-text u-margin-top-large">
+            <div className="u-center-text u-margin-top-huge">
                 <Button color="green">Discover all tours</Button>
             </div>
         </section>
