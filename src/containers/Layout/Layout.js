@@ -9,6 +9,8 @@ import Stories from '../../components/Stories/Stories';
 import Booking from '../../components/Booking/Booking';
 import Footer from '../../components/Footer/Footer';
 import Navigation from '../../components/Navigation/Navigation';
+import Modal from '../../components/Modal/Modal';
+
 const layout = () => (
     <Wrapper>
         <Navigation />
@@ -21,6 +23,7 @@ const layout = () => (
             <Booking />
             <Footer />
         </main>
+        <Modal />
     </Wrapper>
 );
 

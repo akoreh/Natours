@@ -12,7 +12,7 @@ const navigation = () => (
         <nav className="navigation__nav">
             <ul className="navigation__list">
                 <li className="navigation__item">
-                    <a href="#" className="navigation__link">About Natours</a>
+                    <a href="#section-about" className="navigation__link">About Natours</a>
                 </li>
                 <li className="navigation__item">
                     <a href="#" className="navigation__link">Your Benefits</a>

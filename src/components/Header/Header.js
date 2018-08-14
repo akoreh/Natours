@@ -14,7 +14,7 @@ const header = () => (
                 <span className="heading-primary--main">outdoors</span>
                 <span className="heading-primary--sub">is where life happens</span>
             </h1>
-            <Button color="white" animated>Discover our tours</Button>
+            <Button target="#section-tours" color="white" animated>Discover our tours</Button>
         </div>
     </header>
 );
