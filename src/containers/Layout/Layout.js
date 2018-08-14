@@ -7,6 +7,7 @@ import Features from '../../components/Features/Features';
 import Tours from '../../components/Tours/Tours';
 import Stories from '../../components/Stories/Stories';
 import Booking from '../../components/Booking/Booking';
+import Footer from '../../components/Footer/Footer';
 
 const layout = () => (
     <Wrapper>
@@ -17,6 +18,7 @@ const layout = () => (
             <Tours />
             <Stories />
             <Booking />
+            <Footer />
         </main>
     </Wrapper>
 );
