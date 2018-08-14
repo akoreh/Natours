@@ -9,7 +9,7 @@ const button = (props) =>{
    if(props.color){classes.push(`btn--${props.color}`)}
 
    return (
-        <a href={props.href || '#'} className={classes.join(' ')}>{props.children}</a>
+        <a href={props.target || '#'} className={classes.join(' ')}>{props.children}</a>
     );
 }
 

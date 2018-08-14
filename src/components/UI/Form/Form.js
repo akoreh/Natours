@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import './Form.css';
 import Input from '../Input/Input';
 import Radio from '../Radio/Radio';
-import Button from '../Button/Button';
 
 class Form extends Component {
     state = {
