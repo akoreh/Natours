@@ -28,7 +28,7 @@ const stories = () =>{
 
 
     return (
-        <section className="section-stories">
+        <section className="section-stories" id="section-stories">
 
             <BackgroundVideo video={Video} webm={Webm}/>
 

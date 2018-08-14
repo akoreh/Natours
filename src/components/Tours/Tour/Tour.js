@@ -29,7 +29,7 @@ const tour = (props) => {
                         <p className="card__price-only">Only</p>
                         <p className="card__price-value">${props.price}</p>
                     </div>
-                    <Button color="white">Book now!</Button>
+                    <Button target="#modal" color="white">Book now!</Button>
                 </div>
             </div>
         </div>

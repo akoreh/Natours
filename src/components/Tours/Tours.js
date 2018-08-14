@@ -43,7 +43,7 @@ const tours = () => {
 
 
     return (
-        <section className="section-tours">
+        <section className="section-tours" id="section-tours">
             <div className="u-center-text u-margin-bottom-large">
                 <h2 className="heading-secondary">Most Popular Tours</h2>
             </div>

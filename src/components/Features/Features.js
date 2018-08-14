@@ -29,7 +29,7 @@ const features = () => {
 
 
     return (
-        <section className="section-features">
+        <section className="section-features" id="section-features">
             <div className="row">
                 {
                     features.map(item => (

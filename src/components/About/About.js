@@ -5,7 +5,7 @@ import Button from '../UI/Button/Button';
 import Composition from './Composition/Composition';
 
 const about = () => (
-    <section className="section-about">
+    <section className="section-about" id="section-about">
         <div className="u-center-text u-margin-bottom-large">
             <h2 className="heading-secondary">Exciting tours for adventurous people</h2>
         </div>
