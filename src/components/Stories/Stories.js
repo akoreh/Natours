@@ -37,7 +37,7 @@ const stories = () =>{
             </div>
             {
                 content.map(item => (
-                    <div className="row">
+                    <div className="row" key={item.title}>
                         <Story {...item}/>
                     </div>
                 ))

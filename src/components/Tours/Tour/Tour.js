@@ -17,7 +17,7 @@ const tour = (props) => {
                     <ul>
                         {
                             props.details.map(detail => (
-                                <li>{detail}</li>
+                                <li key={detail}>{detail}</li>
                             ))
                         }
                     </ul>

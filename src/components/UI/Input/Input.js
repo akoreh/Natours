@@ -7,8 +7,8 @@ const input = (props) => {
 
     return (
         <Wrapper>
-            <input id={props.name} type={props.type} class="input" placeholder={props.placeholder} required/>
-            <label for={props.name} className="label">{props.placeholder}</label>
+            <input id={props.name} type={props.type} className="input" placeholder={props.placeholder} required/>
+            <label htmlFor={props.name} className="label">{props.placeholder}</label>
         </Wrapper>
     );
 }

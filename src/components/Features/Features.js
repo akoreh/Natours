@@ -33,8 +33,8 @@ const features = () => {
             <div className="row">
                 {
                     features.map(item => (
-                        <div className="col-1-of-4">
-                            <FeatureBox icon={item.icon} title={item.title}>
+                        <div className="col-1-of-4" key={item.title}>
+                            <FeatureBox  icon={item.icon} title={item.title}>
                                 {item.text}
                             </FeatureBox>
                         </div>

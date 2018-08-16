@@ -50,7 +50,7 @@ const tours = () => {
             <div className="row">
                     {
                         tours.map((tour, index) => (
-                            <div className="col-1-of-3">
+                            <div className="col-1-of-3" key={tour.title}>
                                 <Tour {...tour}  index={index}/>
                             </div>
                         ))

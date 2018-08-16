@@ -44,10 +44,10 @@ class Form extends Component {
                     this.state.inputs.map(input => {
                         if(input.type === 'radio'){
                             return (
-                                <div className="form__group">
+                                <div className="form__group" key={input.name}>
                                     {
                                         input.controls.map(radio => (
-                                            <div className="form__radio-group">
+                                            <div className="form__radio-group" key={radio.label}>
                                                 <Radio {...radio} name={input.name}/>
                                             </div>
                                         ))
@@ -56,7 +56,7 @@ class Form extends Component {
                             )
                         }else {
                             return (
-                                <div className="form__group">
+                                <div className="form__group" key={input.placeholder}>
                                     <Input {...input} />
                                 </div>
                             )

@@ -7,7 +7,7 @@ const radio = (props) => {
     return (
         <Wrapper>
             <input name={props.name} type="radio" id={props.value} className="radio__input" />
-            <label for={props.value} className="radio__label">
+            <label htmlFor={props.value} className="radio__label">
                 <span className="radio__button" />
                 {props.label}
             </label>
