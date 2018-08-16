@@ -1,4 +1,5 @@
-@import '../../sass/abstracts/_variables';
+@import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
 
 .section-features{
     padding: 20rem 0;
@@ -9,5 +10,9 @@
 
     & > * {
         transform: skewY(7deg);
+    }
+
+    @include breakpoint(tab-port) {
+        padding: 10rem 0;
     }
 }

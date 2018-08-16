@@ -1,8 +1,13 @@
-@import '../../sass/abstracts/_variables';
+@import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
 
 .section-booking{
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include breakpoint(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .booking {
@@ -11,11 +16,24 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
-    height: 50rem;
+    @include breakpoint(tab-land) {
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), url('../../assets/img/nat-10.jpg');
+    }
+
+    @include breakpoint(tab-port) {
+        background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), url('../../assets/img/nat-10.jpg');
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
 
+        @include breakpoint(tab-land) {
+            width: 65%;
+        }
+
+        @include breakpoint(tab-port) {
+            width: 100%;
+        }
     }
 }

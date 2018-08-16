@@ -1,6 +1,25 @@
+/* Media queries
+
+600px: phone
+900px: Tablet portrait
+1200px: Tablet lanscape
+1800px: Big Desktop
+
+*/
+/*
+    Params:
+    phone
+    tab-port
+    tab-land
+    big-desktop
+*/
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
 .form__radio-group {
   width: 50%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }

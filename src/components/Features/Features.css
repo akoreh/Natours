@@ -1,3 +1,18 @@
+/* Media queries
+
+600px: phone
+900px: Tablet portrait
+1200px: Tablet lanscape
+1800px: Big Desktop
+
+*/
+/*
+    Params:
+    phone
+    tab-port
+    tab-land
+    big-desktop
+*/
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../assets/img/nat-4.jpg");
@@ -6,3 +21,6 @@
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0; } }

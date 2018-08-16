@@ -1,6 +1,11 @@
-@import '../../sass/abstracts/_variables';
+@import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
 
 .section-stories{
     padding: 15rem 0;
     position:relative;
+
+    @include breakpoint(tab-port) {
+        padding: 10rem 0;
+    }
 }

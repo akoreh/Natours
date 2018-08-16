@@ -1,4 +1,5 @@
-@import '../../sass/abstracts/_variables';
+@import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
 
 .navigation {
 
@@ -18,6 +19,16 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         cursor: pointer;
         text-align: center;
+
+        @include breakpoint(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include breakpoint(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -30,6 +41,16 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .7s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include breakpoint(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include breakpoint(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
@@ -38,7 +59,6 @@
         top: 0;
         right: 0;
         z-index: 2000;
-
         opacity: 0;
         width: 0;
         transition: all .7s cubic-bezier(0.68, -.055, 0.265, 1.55);
@@ -72,7 +92,6 @@
             transition: all .4s;
             backface-visibility: hidden;
         }
-
 
         &:hover,
         &:active {

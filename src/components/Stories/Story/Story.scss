@@ -1,4 +1,5 @@
-@import '../../../sass/abstracts/_variables';
+@import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 
 .story {
     width: 75%;
@@ -11,8 +12,22 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include breakpoint(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include breakpoint(phone) {
+        transform: skewX(0);
+    }
+
     & > * {
         transform: skewX(12deg);
+
+        @include breakpoint(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__shape {
@@ -25,6 +40,10 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+
+        @include breakpoint(phone) {
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img {

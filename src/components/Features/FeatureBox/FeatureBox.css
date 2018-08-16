@@ -1,3 +1,18 @@
+/* Media queries
+
+600px: phone
+900px: Tablet portrait
+1200px: Tablet lanscape
+1800px: Big Desktop
+
+*/
+/*
+    Params:
+    phone
+    tab-port
+    tab-land
+    big-desktop
+*/
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -6,6 +21,9 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .2s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -14,6 +32,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.15); }

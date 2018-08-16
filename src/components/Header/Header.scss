@@ -1,5 +1,6 @@
-@import '../../sass/abstracts/_variables';
-@import '../../sass/base/_animations';
+@import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/base/animations';
 
 .header {
     position: relative;
@@ -8,6 +9,10 @@
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @include breakpoint(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 
     /* Logo Box  */
 
