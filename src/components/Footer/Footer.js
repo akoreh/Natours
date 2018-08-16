@@ -3,11 +3,16 @@ import React from 'react';
 import './Footer.css';
 import Logo1x from '../../assets/img/logo-green-1x.png';
 import Logo2x from '../../assets/img/logo-green-2x.png';
+import LogoSmall1x from '../../assets/img/logo-green-small-1x.png';
+import LogoSmall2x from '../../assets/img/logo-green-small-2x.png';
 
 const footer = () => (
     <footer className="footer">
         <div className="footer__logo-box">
-            <img srcSet={`${Logo1x} 1x, ${Logo2x} 2x`} alt="Footer Logo" className="footer__logo"/>
+            <picture className="footer__logo">
+                <source srcSet={`${LogoSmall1x} 1x, ${LogoSmall2x} 2x`} media="(max-width: 37.5em)"/>
+                <img srcSet={`${Logo1x} 1x, ${Logo2x} 2x`} alt="Footer Logo" className="footer__logo"/>
+            </picture>
         </div>
         <div className="row">
             <div className="col-1-of-2">
